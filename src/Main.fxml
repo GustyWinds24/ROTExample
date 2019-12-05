@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="156.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutY="-2.0" prefHeight="190.0" prefWidth="387.0">
+         <bottom>
+            <ToolBar prefHeight="37.0" prefWidth="406.0" BorderPane.alignment="CENTER">
+               <items>
+                  <RadioButton mnemonicParsing="false" selected="true" text="ROT5" translateX="10.0">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="ROTButtonGroup" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton mnemonicParsing="false" text="ROT13" toggleGroup="$ROTButtonGroup" translateX="40.0" />
+                  <RadioButton mnemonicParsing="false" text="ROT18/13.5" toggleGroup="$ROTButtonGroup" translateX="60.0" />
+                  <RadioButton mnemonicParsing="false" text="ROT47" toggleGroup="$ROTButtonGroup" translateX="80.0" />
+               </items>
+            </ToolBar>
+         </bottom>
+         <center>
+            <Pane prefHeight="218.0" prefWidth="387.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea editable="false" prefHeight="25.0" prefWidth="387.0" text="ROT Example" />
+                  <TextArea editable="false" layoutY="24.0" prefHeight="59.0" prefWidth="387.0" text="Insert a string or digits you want to encipher using ROT. Select which ROT you want to encipher with. Caution: ROT5 is only used for converting digits." wrapText="true" />
+                  <TextField layoutY="83.0" prefHeight="25.0" prefWidth="387.0" promptText="Enter string/digits here and press enter" />
+                  <TextArea editable="false" layoutY="108.0" prefHeight="46.0" prefWidth="387.0" promptText="Resulting text shows up here" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
 </AnchorPane>
-
