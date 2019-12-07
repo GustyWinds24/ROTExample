@@ -22,6 +22,7 @@ public class Main extends Application {
 			Scene scene = new Scene( layout );
 			
 			primaryStage.setScene(scene);
+			primaryStage.setTitle("ROT Example");
 			primaryStage.show();
 			
 		} catch(Exception e) {
