@@ -5,19 +5,19 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="273.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="273.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
    <children>
       <BorderPane layoutY="-2.0" prefHeight="281.0" prefWidth="390.0">
          <bottom>
             <ToolBar prefHeight="37.0" prefWidth="406.0" BorderPane.alignment="CENTER">
                <items>
-                  <RadioButton mnemonicParsing="false" selected="true" text="ROT5" translateX="10.0">
+                  <RadioButton mnemonicParsing="false" onAction="#handle" selected="true" text="ROT5" translateX="10.0">
                      <toggleGroup>
                         <ToggleGroup fx:id="ROTButtonGroup" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" text="ROT13" toggleGroup="$ROTButtonGroup" translateX="40.0" />
-                  <RadioButton mnemonicParsing="false" text="ROT18/13.5" toggleGroup="$ROTButtonGroup" translateX="60.0" />
-                  <RadioButton mnemonicParsing="false" text="ROT47" toggleGroup="$ROTButtonGroup" translateX="80.0" />
+                  <RadioButton mnemonicParsing="false" onAction="#handle" text="ROT13" toggleGroup="$ROTButtonGroup" translateX="40.0" />
+                  <RadioButton mnemonicParsing="false" onAction="#handle" text="ROT18/13.5" toggleGroup="$ROTButtonGroup" translateX="60.0" />
+                  <RadioButton mnemonicParsing="false" onAction="#handle" text="ROT47" toggleGroup="$ROTButtonGroup" translateX="80.0" />
                </items>
             </ToolBar>
          </bottom>
@@ -25,7 +25,7 @@
             <Pane prefHeight="218.0" prefWidth="387.0" BorderPane.alignment="CENTER">
                <children>
                   <TextArea editable="false" layoutY="-1.0" prefHeight="132.0" prefWidth="390.0" text="Insert a string or digits you want to encipher using ROT. Select which ROT you want to encipher with. &#10;Note: &#10;- ROT5 is only used for converting digits.&#10;- ROT13 is only used for alphabetical strings in any case.&#10;- ROT18/13.5 for both.&#10;- ROT47 for any character." wrapText="true" />
-                  <TextField layoutY="124.0" prefHeight="42.0" prefWidth="390.0" promptText="Enter string/digits here and press enter" />
+                  <TextField layoutY="124.0" onAction="#handle" prefHeight="42.0" prefWidth="390.0" promptText="Enter string/digits here and press enter" />
                   <TextArea editable="false" layoutY="165.0" prefHeight="79.0" prefWidth="390.0" promptText="Resulting text shows up here" />
                </children>
             </Pane>
