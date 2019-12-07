@@ -13,7 +13,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			
-			// Load the FXML document (we created with SceneBuilder)
+			// Load the FXML document
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation( Main.class.getResource("../Main.fxml") );
 			
