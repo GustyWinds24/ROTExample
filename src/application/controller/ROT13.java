@@ -1,4 +1,4 @@
-package application;
+package application.controller;
 
 public class ROT13 implements ROTVariant {
 	private String inputString;
