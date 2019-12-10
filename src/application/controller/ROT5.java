@@ -15,8 +15,8 @@ public class ROT5 implements ROTVariant {
 			} else if(Character.isWhitespace(num)) {
 				integerArray.add(num);
 			} else {
-				return "Error: ROT5 doesn't convert characters." +
-					   " Only integers and whitespace are allowed.";
+				return "Error: ROT5 doesn't convert characters."
+					    + " Only integers and whitespace are allowed.";
 			}
 		}
 		
