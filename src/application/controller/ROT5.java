@@ -11,7 +11,7 @@ public class ROT5 implements ROTVariant {
 		ArrayList<Object> integerArray = new ArrayList<>();
 		
 		for(char num : inputArray) {
-			if(num != ' ') {
+			if(Character.isDigit(num)) {
 				integerArray.add(Integer.parseInt(String.valueOf(num)));
 			} else {
 				integerArray.add(num);
