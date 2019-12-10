@@ -1,29 +1,7 @@
 package application.controller;
 
 public class ROT13 implements ROTVariant {
-	private String inputString;
-	private String outputString;
-	
-	/*public ROT13(String inputString) {
-		this.inputString = inputString;
-	}
-	
-	public void setInputString(String inputString) {
-		this.inputString = inputString;
-	}
-	
-	public String getInputString() {
-		return inputString;
-	}
-	
-	public void setOutputString() {
-		outputString = cipherROT(inputString);
-	}
-	
-	public String getOutputString() {
-		return outputString;
-	}*/
-	
+
 	@Override
 	public String cipherROT(String inputString) {
 		String cipheredString;
