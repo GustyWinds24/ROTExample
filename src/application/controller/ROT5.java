@@ -8,7 +8,7 @@ public class ROT5 implements ROTVariant {
 	public String cipherROT(String inputString) {
 		StringBuilder cipheredString = new StringBuilder();
 		char[] inputArray = inputString.toCharArray();
-		ArrayList integerArray = new ArrayList<>();
+		ArrayList<Object> integerArray = new ArrayList<>();
 		
 		for(char num : inputArray) {
 			if(num != ' ') {
