@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ROTMain {
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Enter a String to convert through ROT13:");
@@ -15,6 +15,6 @@ public class ROTMain {
 			cipher.getInputString(), cipher.getOutputString());
 		
 		input.close();
-	}
+	}*/
 
 }

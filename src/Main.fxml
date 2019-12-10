@@ -11,13 +11,13 @@
          <bottom>
             <ToolBar prefHeight="37.0" prefWidth="406.0" BorderPane.alignment="CENTER">
                <items>
-                  <RadioButton mnemonicParsing="false" onAction="#handle" selected="true" text="ROT5" translateX="10.0">
+                  <RadioButton fx:id="rot5Button" mnemonicParsing="false" onAction="#rot5ButtonSelected" selected="true" text="ROT5" translateX="10.0">
                      <toggleGroup>
-                        <ToggleGroup fx:id="ROTButtonGroup" />
+                        <ToggleGroup fx:id="rotButtonGroup" />
                      </toggleGroup></RadioButton>
-                  <RadioButton mnemonicParsing="false" onAction="#handle" text="ROT13" toggleGroup="$ROTButtonGroup" translateX="40.0" />
-                  <RadioButton mnemonicParsing="false" onAction="#handle" text="ROT18/13.5" toggleGroup="$ROTButtonGroup" translateX="60.0" />
-                  <RadioButton mnemonicParsing="false" onAction="#handle" text="ROT47" toggleGroup="$ROTButtonGroup" translateX="80.0" />
+                  <RadioButton fx:id="rot13Button" mnemonicParsing="false" onAction="#rot13ButtonSelected" text="ROT13" toggleGroup="$rotButtonGroup" translateX="40.0" />
+                  <RadioButton fx:id="rot18Button" mnemonicParsing="false" onAction="#rot18ButtonSelected" text="ROT18/13.5" toggleGroup="$rotButtonGroup" translateX="60.0" />
+                  <RadioButton fx:id="rot47Button" mnemonicParsing="false" onAction="#rot47ButtonSelected" text="ROT47" toggleGroup="$rotButtonGroup" translateX="80.0" />
                </items>
             </ToolBar>
          </bottom>
@@ -25,8 +25,8 @@
             <Pane prefHeight="218.0" prefWidth="387.0" BorderPane.alignment="CENTER">
                <children>
                   <TextArea editable="false" layoutY="-1.0" prefHeight="132.0" prefWidth="390.0" text="Insert a string or digits you want to encipher using ROT. Select which ROT you want to encipher with. &#10;Note: &#10;- ROT5 is only used for converting digits.&#10;- ROT13 is only used for alphabetical strings in any case.&#10;- ROT18/13.5 for both.&#10;- ROT47 for any character." wrapText="true" />
-                  <TextField layoutY="124.0" onAction="#handle" prefHeight="42.0" prefWidth="390.0" promptText="Enter string/digits here and press enter" />
-                  <TextArea editable="false" layoutY="165.0" prefHeight="79.0" prefWidth="390.0" promptText="Resulting text shows up here" />
+                  <TextField fx:id="inputTextField" layoutY="124.0" onAction="#setInputText" prefHeight="42.0" prefWidth="390.0" promptText="Enter string/digits here and press enter" />
+                  <TextArea fx:id="outputTextArea" editable="false" layoutY="165.0" prefHeight="79.0" prefWidth="390.0" promptText="Resulting text shows up here" />
                </children>
             </Pane>
          </center>

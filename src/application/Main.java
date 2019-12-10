@@ -19,8 +19,8 @@ public class Main extends Application {
 			AnchorPane layout = (AnchorPane) loader.load();				
 			Scene scene = new Scene( layout );
 			
-			primaryStage.setScene(scene);
 			primaryStage.setTitle("ROT Example");
+			primaryStage.setScene(scene);
 			primaryStage.show();
 			
 		} catch(Exception e) {

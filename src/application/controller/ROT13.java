@@ -4,7 +4,7 @@ public class ROT13 implements ROTVariant {
 	private String inputString;
 	private String outputString;
 	
-	public ROT13(String inputString) {
+	/*public ROT13(String inputString) {
 		this.inputString = inputString;
 	}
 	
@@ -22,7 +22,7 @@ public class ROT13 implements ROTVariant {
 	
 	public String getOutputString() {
 		return outputString;
-	}
+	}*/
 	
 	@Override
 	public String cipherROT(String inputString) {
