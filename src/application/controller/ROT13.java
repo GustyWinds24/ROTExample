@@ -28,4 +28,5 @@ public class ROT13 implements ROTVariant {
 		
 		return cipheredString;
 	}
+	
 }

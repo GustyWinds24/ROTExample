@@ -3,6 +3,7 @@ package application.controller;
 import java.util.ArrayList;
 
 public class ROT18 implements ROTVariant{
+	
 	@Override
 	public String cipherROT(String inputString) {
 		StringBuilder cipheredString = new StringBuilder();
@@ -50,4 +51,5 @@ public class ROT18 implements ROTVariant{
 		
 		return cipheredString.toString();
 	}
+	
 }

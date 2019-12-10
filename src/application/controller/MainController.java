@@ -12,6 +12,7 @@ public class MainController {
 	private ROT13 rot13 = new ROT13();
 	private ROT5 rot5 = new ROT5();	
 	private ROT18 rot18 = new ROT18();
+	private ROT47 rot47 = new ROT47();
 	
 	@FXML 
 	private RadioButton rot5Button;
@@ -44,8 +45,7 @@ public class MainController {
 				setOutputText(rot18.cipherROT(inputText));
 				break;
 			case ROT47:
-				System.out.println(inputText);
-				System.out.println("Test button4");
+				setOutputText(rot47.cipherROT(inputText));
 				break;
 		}
 	}
