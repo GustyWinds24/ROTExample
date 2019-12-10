@@ -12,8 +12,11 @@ public class ROT5 implements ROTVariant {
 		for(char num : inputArray) {
 			if(Character.isDigit(num)) {
 				integerArray.add(Integer.parseInt(String.valueOf(num)));
-			} else {
+			} else if(Character.isWhitespace(num)) {
 				integerArray.add(num);
+			} else {
+				return "Error: ROT5 doesn't convert characters." +
+					   " Only integers and whitespace are allowed.";
 			}
 		}
 		
