@@ -15,7 +15,7 @@ public class MainController {
 	private final static ROTOption[] options = ROTOption.values();
 	
 	private ROT13 rot13 = new ROT13();
-	
+	private ROT5 rot5 = new ROT5();	
 	@FXML 
 	private RadioButton rot5Button;
 	@FXML
@@ -38,8 +38,7 @@ public class MainController {
 		
 		switch(selectedROTOption) {
 			case ROT5:
-				System.out.println(inputText);
-				System.out.println("Test button1");
+				setOutputText(rot5.cipherROT(inputText));
 				break;
 			case ROT13:
 				setOutputText(rot13.cipherROT(inputText));
