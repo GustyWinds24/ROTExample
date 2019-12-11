@@ -2,7 +2,8 @@
 A simple Java program showcasing the "Rotate By x Places" cipher such as ROT13 where any English characters 
 inputted by a user is rotated by 13 places.  13 places since there are only 26 letters in the English alphabet.
 The cipher loops back around to 'A' when any character from the second half of the alphabet starting at 'N' 
-is inputted.  This simple and easily breakable substitution cipher is explained more in detail at 
+is inputted.  Any whitespace that was inputted by the user isn't changed and is kept in the same position in the
+inputted string.  This simple and easily breakable substitution cipher is explained more in detail at 
 https://en.wikipedia.org/wiki/ROT13.  The program uses a GUI made using the JavaFX Scene Builder integrated
 into the Eclipse IDE.  Below is a quick overview of the four types of ROT ciphers from the wiki article as they
 behave within the program:
